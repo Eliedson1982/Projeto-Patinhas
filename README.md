@@ -1,11 +1,6 @@
 # Projeto-Patinhas
 O projeto se baseia em criar um site para um petshop. O objetivo é criar um site responsivo, onde os usuários podem ver os produtos e serviços, agendar banho ou tosa e comprar produtos, além de ter contato com os donos do petshop.
 
-# Tecnologias Utilizadas
-- HTML
-- CSS
-- JS
-
 # Funcionalidades
 O projeto tem como funcionalidade:
 - Página inicial, com informações sobre a loja e imagens dos produtos em destaque.
