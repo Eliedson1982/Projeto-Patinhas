@@ -1,0 +1,146 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background-image: url(https://media.istockphoto.com/id/1156659073/pt/vetorial/background-with-dog-paw-print-and-bone.jpg?s=170667a&w=0&k=20&c=hbWuKzhxzAV3lFa0m6NWql2T-C9evO8EpSa4eg-Lh-k=);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.user span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.hamburguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 3px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.paw {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top span {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.top img {
+    width: 100px;
+    height: 100px;
+}
+
+.bottom {
+    position: relative;
+}
+
+.triangle {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #fff;
+}
+
+.formulario {
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburguer {
+        display: flex;
+    }
+    
+    .user {
+        display: none;
+    }
+}
