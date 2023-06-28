@@ -1,0 +1,1 @@
+não tem a pasta node_modules, instalar npm na pasta é necessário.
