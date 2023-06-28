@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/atendimento.css"/>
+
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>Pessoa</caption>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>telefone</th>
+            <th>Ação</th>
+            <th>Ação</th>
+          </tr>
+    
+          <% for (i=0; i<pessoasJson.length; i++) { %>
+    
+            <tr>
+                <td> <%= pessoasJson[i].nome %> </td>
+                <td> <%= pessoasJson[i].email %> </td>
+                <td> <%= pessoasJson[i].telefone %> </td>
+                <td> <a href="edit/<%= pessoasJson[i].id %>">Alterar</a></td>
+                <td> <a href="delete/<%= pessoasJson[i].id %>">Excluir</a></td>
+    
+                </tr>
+            <% } %>
+        </table>
+        </thead>
+        <tbody>
+          <a href="cadastro" id="novapessoa"> Nova pessoa</a>
+          <br>
+          <br>
+          <a href="login" id="novapessoa"> Logar</a>
+
+</body>
+</html>
