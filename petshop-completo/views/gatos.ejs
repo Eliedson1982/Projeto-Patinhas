@@ -4,72 +4,97 @@
   <title>Produtos para Gatos</title>
   <link href="../stylesheets/gatos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
 <body>
-  <div class="header">
-    <img src="https://img.freepik.com/vetores-premium/gato-fofo-sentado_512627-64.jpg?w=2000" width="200px">
-    <h1>Produtos para Gatos</h1>
-  </div>
-  <div class="container">
-    <div class="category">
-      <h2>Comida</h2>
-      <div class="product">
-        <img src="/images/racao_royal_gatos.webp" alt="Comida para Gatos">
-        <h3>Comida Premium para Gatos</h3>
-        <button class="buy-button">COMPRAR</button>
+  <header id="header">
+    <div class="container">
+        <div class="header-area">
+            <a href="#header"><img src="/images/Pelos_Patas.png" width="200px" alt="Logo PetFood"></a>
+            <nav>
+                <ul class="menu-area">
+                    <li class="menu--item"><a href="/principal">Página Inicial</a></li>
+                    <li class="menu--item"><a href="/produtos">Comprar Produtos</a></li>
+                    <li class="menu--item"><a href="/cachorro">Produtos para Cães</a></li>
+                </ul>
+            </nav>
+        </div>
+      </header>
+      <section id="banner">
+        <div class="container">
+            <div class="banner-area">
+                <div class="banner--desc"> 
+                    <div class="banner--desc--text">
+                        <h1>Tudo o que seu gato precisa a Pelos e Patas tem!</h1>
+                        <p class="text-light">Descubra a paixão em cada mordida, o prazer em cada brinquedo e a suavidade em cada momento de cuidado com nossos produtos exclusivos para gatos. Deixe seu felino sentir-se amado e mimado como merece!</p>
+                        <a href="/produtos" class="button">Comprar produtos</a>
+                    </div>
+                </div>
+                <div class="banner--image">
+                    <img src="/images/gato-olhando-cimaa.png" alt="Imagem de um gato">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="categorias">
+      <div class="categoria">
+        <h2>Alimentação</h2>
+        <div class="produto">
+          <div class="item">
+            <img id="imagem" src="/images/images/ProductsJson/3.png">
+            <h3>Ração Mix de Carnes para Gatos Adultos</h3>
+            <h5>- Indicada para gatos adultos; - 100% completa e balanceada; - Fórmula livre de corantes artificiais; - Minerais controlados para ajudar a manter o trato urinário saudável;</h5>
+            <p>R$56.00</p>
+          </div>
+          <div class="item">
+            <img id="imagem" src="/images/images/productsJson/1.png">
+            <h3>Ração para Gatos Adultos Castrados Sabor Frango</h3>
+            <h5>- Indicada para gatos; - Contém fórmula específica para felinos castrados; - Auxilia no controle de peso; - Proporciona saúde ao trato urinário, - Livre de corantes e aromatizantes artificiais;</h5>
+            <p>R$30.00</p>
+          </div>
+          <div class="item">
+            <img id="imagem" src="/images/images/ProductsJson/12.png">
+            <h3>Ração Úmida Lata para Gatos Adultos Sabor Atum ao Molho</h3>
+            <h5>- Indicada para gatos adultos; - 100% completa e balanceada; - Fórmula livre de corantes artificiais; - Minerais controlados para ajudar a manter o trato urinário saudável;</h5>
+            <p>R$10.00</p>
+          </div>
+          <div class="item">
+            <img id="imagem" src="/images/racao_royal_gatos.webp">
+            <h3>Comida Premium para Gatos</h3>
+            <h5>- Intestino saudável; - Reduz o odor das fezes; - Proteínas de alta qualidade; - Pelagem mais macia e brilhante;</h5>
+            <p>R$29.00</p>
+          </div>
+        </div>
       </div>
-      <div class="product">
-        <img src="/images/racao_royal_gatos_filhotes.webp" alt="Rações para Gatos">
-        <h3>Rações Balanceadas para Gatos</h3>
-        <button class="buy-button">COMPRAR</button>
+  
+      <div class="categoria">
+        <h2>Produtos de Higiene</h2>
+        <div class="produto">
+          <div class="item">
+            <img id="imagem" src="https://www.petlove.com.br/images/products/250533/product/2492359.jpg?1635795887" alt="Areia para Gatos">
+            <h3>Areia Sanitária para Gatos</h3>
+            <h5>- Grãos finos; - Fácil de limpar; - Torrões super firmes; - Controle superior de odor; - Alta capacidade de absorção do xixi;</h5>
+            <p>R$50,00</p>
+          </div>
+          <div class="item">
+            <img id="imagem" src="https://www.petlove.com.br/images/products/235168/product/Areia_Sanit%C3%A1ria_Kelco_Pipicat_Classic_12.jpg?1627754430" alt="Areia para Gatos">
+            <h3>Areia Sanitária Kelco Pipicat Classic</h3>
+            <h5>- Sem fragrância; - Grãos médios; - Forma torrões que facilitam a limpeza; - Controle de odores superior com Pipicat Odor Block.</h5>
+            <p>R$40.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria">
+        <h2>Produtos para Lazer</h2>
+        <div class="produto">
+          <div class="item">
+            <img id="imagem" src="/images/kit_toy_gatos.webp">
+            <h3>Brinquedo Interativo para Gatos</h3>
+            <h5>- Combine corda e pena em um ótimo brinquedo em ambientes fechados, este brinquedo para gatos é uma isca irresistível!</h5>
+            <p>R$60.00</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="category">
-      <h2>Brinquedos</h2>
-      <div class="product">
-        <img src="/images/kit_toy_gatos.webp" alt="Brinquedos para Gatos">
-        <h3>Brinquedo Interativo para Gatos</h3>
-        <button class="buy-button">COMPRAR</button>
-      </div>
-    </div>
-    <div class="category">
-      <h2>Petiscos</h2>
-      <div class="product">
-        <img src="/images/racao_umida_cao.webp" alt="Petiscos para Gatos">
-        <h3>Ração umida Naturais para Gatos</h3>
-        <button class="buy-button">COMPRAR</button>
-      </div>
-      <div class="product">
-        <img src="https://cobasi.vteximg.com.br/arquivos/ids/185843-400-400/Petisco-Friskies-Camarao-Salmao-e-Atum.jpg?v=638133806488200000" alt="Snacks para Gatos">
-        <h3>Petiscos Para Gatos</h3>
-        <button class="buy-button">COMPRAR</button>
-      </div>
-    </div>
-    <div class="category">
-      <h2>Rações</h2>
-      <div class="product">
-        <img src="/images/racao_royal_cao_filhote.webp" alt="Rações para Gatos">
-        <h3>Rações Balanceadas para Gatos</h3>
-        <button class="buy-button">COMPRAR</button>
-      </div>
-      <div class="product">
-        <img src="https://images.petz.com.br/fotos/1658415086408.jpg" alt="Rações Naturais para Gatos">
-        <h3>Rações Naturais para Gatos</h3>
-        <button class="buy-button">COMPRAR</button>
-      </div>
-    </div>
-    <div class="category">
-      <h2>Produtos de Higiene</h2>
-      <div class="product">
-        <img src="https://www.petlove.com.br/images/products/250533/product/2492359.jpg?1635795887" alt="Areia para Gatos">
-        <h3>Areia Sanitária para Gatos</h3>
-        <button class="buy-button">COMPRAR</button>
-      </div>
-      <div class="product">
-        <img src="https://www.petlove.com.br/images/products/233413/product/Kit_Cafun%C3%A9_Shampoo___Condicionador_-_Kit.jpg?1627748424" alt="Shampoo para Gatos">
-        <h3>Shampoo Hipoalergênico para Gatos</h3>
-        <button class="buy-button">COMPRAR</button>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
