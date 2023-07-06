@@ -35,9 +35,6 @@ router.get('/cadastro', function(req, res, next) {
   res.render('cadastro', { title: 'Formulário' });
 });
 
-router.get('/atendimento', function(req, res, next) {
-  res.render('atendimento', { title: 'Atendimento' });
-});
 router.get('/gatos', function(req, res, next) {
   res.render('gatos', { title: 'Atendimento' });
 });
