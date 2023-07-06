@@ -201,3 +201,74 @@ header {
   justify-content: center;
   flex: 1;
 }
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .categorias {
+    padding-top: 100px;
+  }
+
+  .produto {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .categorias {
+    padding-top: 80px;
+  }
+
+  .produto {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
