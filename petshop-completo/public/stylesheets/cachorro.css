@@ -1,79 +1,203 @@
+/* Pré-configurações */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --orange-color: #FF9A03;
+    --brown-color: #432A2A;
+    --text-light-color: #FFF;
+    --text-dark-color: #000;
+    --background-color: #FAFAFA;
+}   
+
 * {
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 2px;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: url("../images/backcachorro.jpg") no-repeat center center fixed;
-  background-size: cover;
+    overflow-x: hidden;
+}
+
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 480px;
+}
+
+.categoria {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#imagem {
+  width: 150px;
+}
+
+.produto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, max(300px));
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.item{
+  border: 5px solid #FF9A03;
+  border-radius: 10px;
+}
+
+h1 {
+    font-size: 17rem;
+    font-weight: 700;
+    color: var(--text-light-color);
+}
+
+h2 {
+    font-size: 16rem;
+    font-weight: 700;
+    color: var(--text-dark-color);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+h3 {
+    font-size: 9rem;
+    font-weight: 600;
+    color: var(--orange-color);
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 6rem;
+    font-weight: 400;
+    color: #494949;
+}
+
+a {
+    font-size: 9rem;
+    font-weight: 700;
+    color: var(--text-light-color);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+p {
+    font-size: 9rem;
+    font-weight: 400;
+    color: var(--text-dark-color);
 }
 
 .header {
-  background-color: #ffeb9a;
-  padding: 20px;
+  background-color: #432A2A;
+  padding: 5px;
   text-align: center;
 }
 
-.header h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 36px;
-  color: black;
-  margin: 0;
+li {
+  font-size: 10rem;
+}
+
+li img{
+  width: 100px;
+}
+
+.text-light {
+  color: var(--text-light-color);
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: rgb(254, 255, 170);
 }
 
-.buy-button {
-  display: block;
-  background-color: #FFB300;
-  color: #fff;
-  padding: 8px 16px;
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  width: 100%;
+  height: 65px;
+  background-color: var(--orange-color);
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all 0.8;
 }
 
-.category {
-  margin-bottom: 40px;
+.button:hover {
+  background-color: #fbaf3e;
 }
 
-.category h2 {
-  font-size: 24px;
-  color: #FFB300;
-  margin: 0;
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.product {
+/* Header */
+
+header {
+  background-color: var(--brown-color);
+  width: 100vw;
+}
+
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 56px 0px;
+}
+
+.menu-area {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  
+}
+
+.menu--item a:hover {
+  color: var(--orange-color);
+}
+
+/* Section Banner */
+
+#banner {
+  width: 100vw;
+  max-height: 500px;
+  background-color: var(--brown-color);
+  border-radius: 0px 0px 200px 0px;
+  position: absolute;
+  left: 0px;
+}
+
+.banner-area {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.banner--desc {
+  flex: 1;
+}
+
+.banner--desc--text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-  text-align: center;
+  gap: 18px;
+  max-width: 492px;
 }
 
-.product img {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
-  border: 5px solid #FFB300;
+.banner--desc--text .button {
+  margin-top: 32px;
 }
-
-.product h3 {
-  font-size: 16px;
-  margin: 0;
-}
-
-@media screen and (max-width: 600px) {
-  .product img {
-    width: 80px;
-    height: 80px;
-  }
+ 
+.banner--image {
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }
